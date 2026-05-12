@@ -1,5 +1,13 @@
 # MarketGauge
 
+<p align="right">
+  <img src="screenshots/us-economy-overview.jpg" width="360" alt="U.S. Economy dashboard snapshot" />
+  <br/>
+  <img src="screenshots/currency-strength-board.jpg" width="360" alt="Currency strength board and pair-pressure matrix" />
+  <br/>
+  <img src="screenshots/aud-detail.jpg" width="360" alt="Currency detail view (AUD example)" />
+</p>
+
 MarketGauge is a full-stack dashboard that ingests macro + FX data, normalizes it to a monthly timeline, and computes regime scores (0–100) for:
 
 - U.S. macro risk (recession risk + macro stress + USD strength)
