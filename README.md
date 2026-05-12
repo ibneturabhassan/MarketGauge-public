@@ -1,6 +1,6 @@
 # MarketGauge
 
-<p align="right">
+<p align="center">
   <img src="screenshots/us-economy-overview.jpg" width="360" alt="U.S. Economy dashboard snapshot" />
   <br/>
   <img src="screenshots/currency-strength-board.jpg" width="360" alt="Currency strength board and pair-pressure matrix" />
