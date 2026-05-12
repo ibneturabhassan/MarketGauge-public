@@ -50,3 +50,8 @@ See `architecture.md` for the diagram + explanation.
 
 Checklist: `PUBLICATION.md`
 
+## Screenshots
+
+- `screenshots/us-economy-overview.jpg` — U.S. Economy dashboard snapshot
+- `screenshots/currency-strength-board.jpg` — Currency strength board and pair-pressure matrix
+- `screenshots/aud-detail.jpg` — Currency detail view (example)
