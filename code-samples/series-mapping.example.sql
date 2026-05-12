@@ -1,6 +1,5 @@
--- Example: Series mapping concept (sanitized).
--- Why it’s interesting:
--- - Keeps scoring code source-agnostic by mapping provider IDs to logical keys.
+-- Purpose: Series mapping concept.
+-- Why it matters: Keeps scoring code source-agnostic by mapping provider IDs to logical keys.
 
 CREATE TABLE IF NOT EXISTS series_mapping (
   logical_key TEXT PRIMARY KEY,
@@ -14,4 +13,3 @@ VALUES
   ('US_UNEMPLOYMENT_RATE', 'FRED', 'UNRATE', 'MONTHLY'),
   ('EUR_NEER_BIS', 'FRED', 'NBXMBIS', 'MONTHLY'),
   ('US_ISM_PMI', 'DBNOMICS', 'ISM/pmi/pm', 'MONTHLY');
-

@@ -1,54 +1,34 @@
-# Publication Rules & Checklist (MarketGauge)
+# Publication Checklist (MarketGauge)
 
-This repository contains a private development version. Only the contents of `public-showcase/` are intended for public release.
+Use this checklist before publishing or sharing this repository.
 
-## What is safe to publish
+## Safe Contents
 
-- `public-showcase/` (docs, diagrams, sanitized code samples, screenshots)
-- This file (`PUBLICATION.md`)
-- `scripts/export-public.sh` (exports only safe public files)
+- `public-showcase/` (docs, diagrams, code excerpts, screenshots)
+- `PUBLICATION.md`
+- `scripts/export-public.sh`
 
-## What must NOT be published
+## Do Not Publish
 
-- Any secrets: API keys, tokens, passwords, `.env` files
-- Private URLs, internal hostnames, IPs, or deployment configs
-- Full private source code (backend/frontend) unless explicitly requested
-- Database files, dumps, or user data
-- Logs containing identifiers, credentials, or private paths
-- Screenshots that reveal local paths, credentials, accounts, or internal dashboards
-- Anything you would not want copied verbatim
+- Secrets of any kind: API keys, tokens, passwords, `.env*`
+- Internal URLs/hostnames/IPs, deployment configs, or infrastructure details
+- Databases, dumps, logs, or any user/customer data
+- Screenshots that reveal credentials, personal info, or internal hostnames
 
-## Publication Checklist (run before pushing public)
+## Pre-Publish Checklist
 
-1. Verify only `public-showcase/` will be exported.
-2. Search for common secret patterns:
-   - `FRED_API_KEY`, `FRED_API_KEYS`, `API_KEY`, `TOKEN`, `SECRET`, `PASSWORD`
-3. Ensure no `.env*` files are inside `public-showcase/`.
-4. Review screenshots manually (no credentials, personal info, or private hostnames).
-5. Confirm code samples are short, representative, and sanitized (no full modules copied).
-6. Confirm docs do not describe sensitive implementation details (exact IDs are okay if public; avoid internal ops).
+1. Confirm export copies only `public-showcase/` plus `PUBLICATION.md`.
+2. Search for common secret patterns: `API_KEY`, `TOKEN`, `SECRET`, `PASSWORD`, `FRED_API_KEYS`.
+3. Confirm no `.env*` files exist under `public-showcase/`.
+4. Review screenshots manually (no credentials, personal info, or internal hostnames).
+5. Ensure code excerpts are short and free of credentials or operational details.
 
-## Export Workflow (recommended)
+## Export Workflow
 
-Use `scripts/export-public.sh` to create a clean folder for a separate public repository.
-
-- The script copies **only** `public-showcase/` into the destination.
-- Default destination is a sibling directory: `../MarketGauge-public` (configurable).
-
-Example (bash):
+Use `scripts/export-public.sh` to export a clean folder for a public repository:
 
 ```bash
 ./scripts/export-public.sh
 ./scripts/export-public.sh ../MarketGauge-public
 ```
-
-## Ongoing Workflow (how to keep it current)
-
-When you add a meaningful feature in the private repo:
-
-1. Update `public-showcase/features.md` (1–3 bullets).
-2. Update `public-showcase/architecture.md` if a new subsystem was added.
-3. Add/refresh 1–2 screenshots in `public-showcase/screenshots/`.
-4. Add a sanitized excerpt in `public-showcase/code-samples/` if it demonstrates a useful skill.
-5. Re-run the export script and review the public folder before publishing.
 

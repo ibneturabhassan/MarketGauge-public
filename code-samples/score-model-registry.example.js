@@ -1,11 +1,7 @@
 /**
- * Example: Config-driven model registry (sanitized).
- *
- * Why it’s interesting:
- * - Models are defined mostly as configuration so the engine stays generic.
- * - New models can be added without rewriting shared scoring logic.
- *
- * This is a representative excerpt, not the private source.
+ * Purpose: Config-driven model registry excerpt.
+ * Why it matters: Models are defined mostly as configuration so the engine stays generic,
+ * and new models can be added without rewriting shared scoring logic.
  */
 
 export const scoreModelRegistry = [
@@ -36,4 +32,3 @@ export const scoreModelRegistry = [
     },
   },
 ];
-

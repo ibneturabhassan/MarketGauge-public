@@ -1,9 +1,7 @@
 /**
- * Example: Scoring pipeline skeleton (sanitized).
- *
- * Why it’s interesting:
- * - Expanding-window transforms prevent lookahead bias in backtests.
- * - Missing components rescale weights and propagate confidence labels.
+ * Purpose: Scoring pipeline skeleton.
+ * Why it matters: Expanding-window transforms prevent lookahead bias in backtests,
+ * and missing components rescale weights while propagating confidence labels.
  */
 
 export function scoreModelAtMonthEnd({ modelConfig, seriesRepository, monthEndDate }) {
@@ -18,7 +16,7 @@ export function scoreModelAtMonthEnd({ modelConfig, seriesRepository, monthEndDa
 }
 
 function expandingWindowTransform(series, transformSpec, asOfDate) {
-  // Implementation intentionally omitted (private); shape shown for portfolio purposes.
+  // Implementation omitted for brevity; shape shown for clarity.
   return { value: 50, coverage: 1.0 };
 }
 
@@ -31,4 +29,3 @@ function weightedCompositeWithCoverage(componentResults, coverageSpec) {
     coverageRatio >= coverageSpec.lowThreshold ? "OK" : coverageRatio >= coverageSpec.insufficientThreshold ? "Low" : "Insufficient";
   return { score, coverageRatio, confidenceLabel };
 }
-

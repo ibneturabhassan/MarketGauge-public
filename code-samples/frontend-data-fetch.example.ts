@@ -1,9 +1,7 @@
 /**
- * Example: Frontend data fetching contract (sanitized).
- *
- * Why it’s interesting:
- * - Centralizes API calls and caching so views stay simple.
- * - Designed around “latest + history + components” primitives.
+ * Purpose: Frontend data fetching contract excerpt.
+ * Why it matters: Centralizes API calls and caching so views stay simple,
+ * and is designed around “latest + history + components” primitives.
  */
 
 export type ScoreSnapshot = {
@@ -18,4 +16,3 @@ export async function fetchLatestScores(): Promise<ScoreSnapshot[]> {
   if (!res.ok) throw new Error(`Failed to fetch latest scores: ${res.status}`);
   return res.json();
 }
-
