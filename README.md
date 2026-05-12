@@ -52,6 +52,14 @@ Checklist: `PUBLICATION.md`
 
 ## Screenshots
 
-- `screenshots/us-economy-overview.jpg` — U.S. Economy dashboard snapshot
-- `screenshots/currency-strength-board.jpg` — Currency strength board and pair-pressure matrix
-- `screenshots/aud-detail.jpg` — Currency detail view (example)
+### U.S. Economy
+
+![U.S. Economy dashboard snapshot](screenshots/us-economy-overview.jpg)
+
+### Currency Strength
+
+![Currency strength board and pair-pressure matrix](screenshots/currency-strength-board.jpg)
+
+### Currency Detail
+
+![Currency detail view (AUD example)](screenshots/aud-detail.jpg)
