@@ -43,13 +43,6 @@ See `architecture.md` for the diagram + explanation.
 - Backtest/validation scripts for model diagnostics (e.g., AUC/Brier and forward-return analysis).
 - Ingestion sanity checks to catch schema and data integrity issues (duplicates/gaps/revisions).
 
-## Publication Hygiene
-
-- No secrets (API keys, tokens, `.env`) are included in this public repository.
-- Screenshots are reviewed to ensure no credentials, personal data, or internal hostnames appear.
-
-Checklist: `PUBLICATION.md`
-
 ## Screenshots
 
 ### U.S. Economy
